@@ -1,0 +1,20 @@
+@use "../../variables"
+
+.buttons
+    padding: 12px
+    font-size: 18px
+    font-weight: bold
+    white-space: no-wrap
+
+    &--primary
+        color: variables.$textColor
+        background-color: variables.$buttonBg
+
+    @media (max-width: 640px)
+        display: flex
+        align-items: center
+        width: 100%
+
+    @media (max-width: 1024px)
+        &__container
+            gap: 16px
